@@ -36,7 +36,6 @@ int challenge_b(int a)
     int initial_mask = 0b11111111;
     int lowest_byte = a & initial_mask;
     int inverted = ~a;
-    int clear_mask = 0b00000000;
     inverted = inverted & ~initial_mask;
     return inverted | lowest_byte;
 }
